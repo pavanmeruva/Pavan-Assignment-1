@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pavankumar</title>
+<link rel="stylesheet" type="text/css" href="mycss.css" />
+<script type="text/javascript">
+function someFunction() {
+var username=document.getElementById('username').value;
+var password=document.getElementById('password').value;
+var tablecontent=document.getElementById('results').innerHTML;
+tablecontent+="<tr><td width:30px>"+username+"</td><td>"+password+"</td> </tr>";
+document.getElementById('results').innerHTML=tablecontent;
+alert(username+"  added sucessfully");
+}
+
+</script
+</head>
+<body align="center">
+
+<h1>My Contacts</h1>
+<div class="logindiv">
+<table class="headings">
+<tr>
+<td>User Name</td>
+<td><input type="text" id="username"></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="password" id="password"></td>
+</tr>
+<tr>
+<td colspan="2"><input type="button" value="SUBMIT" onclick="someFunction();"> </td>
+</tr>
+</table>
+</div>
+<br>
+<div id="resultdiv" align="center">
+<table id="results" style="border: 2px solid #444; text-align:justify" rules="rows">
+<th>
+USERNAME
+</th>
+<th>
+PASSWORD</th>
+</table>
+</div>
+</body>
+</html>
